@@ -10,11 +10,14 @@ class Product extends Model {}
 Product.init(
   {
     // define columns
-    
-    category_name: {
-      type: DataTypes.STRING,
-      
+    id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true, 
+      allowNull: false
+
     },
+    
     price: {
       type: DataTypes.DECIMAL,
       allowNull: false,
